@@ -14,7 +14,7 @@ $widthML: 1300px;
 };
 
 @mixin mobileM {
-    @media (max-width: #{widthML}){
+    @media (max-width: #{$widthML}){
         @content
     }
     
