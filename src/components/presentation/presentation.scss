@@ -1,0 +1,189 @@
+@import "../../global.scss";
+
+.presentation{
+    top: 70px;
+    background-color: $ivory;
+    display: flex;
+   
+
+
+    .wrapper{
+        display: flex;
+        
+        width: 100vw;
+        height: calc(100vh - 70px );
+
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        &>*{
+
+            flex: 1;
+        }
+
+        .presentation-block1{
+          
+            
+            font-size: 2rem;
+
+            @include mobile{
+                display: flex;
+                align-items: center;
+                    
+                font-size: 0.8rem;
+
+                    
+                }
+
+            .presentation-text{
+                position: relative;
+                z-index: 2;
+                margin-top: 250px;
+                margin-left: 150px;
+                overflow: hidden;
+
+                @include mobile{
+                   
+                margin-left: 15px;
+                    
+                margin-top: -50px;
+                    
+                }
+
+
+
+                span{
+                    font-weight: 800;
+                    font-size: 2.5rem;
+                    color: $mainColor;
+                    @include mobile{
+                        font-size: 1.6rem;
+                  
+                    
+                            
+                        }
+                    
+                }
+
+                h3{
+                    
+                    color: rgb(73, 73, 73);
+                    font-weight: 100;
+                    font-size: 1.5rem;
+
+                    
+                }
+
+                a{
+                    text-decoration: none;
+                    position: relative;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    background-color: $mainColor;
+                    padding: 15px;
+                    color: $ivory;
+                    border: none;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    box-shadow:  2px 2px 5px rgb(153, 148, 148);
+                    border-radius: 3px;
+
+                    &:hover{
+                    box-shadow:  5px 5px 10px rgb(153, 148, 148);
+
+                    }
+                    
+                }
+
+
+
+                .ityped-cursor {
+                    animation: blink 0.9s infinite;
+                    color: black;
+                  }
+          
+                  @keyframes blink {
+                      50%{
+                          opacity: 1;
+                      }
+                      100%{
+                          opacity: 0;
+                      }
+                  }
+            }
+
+        }
+
+        
+        .presentation-block2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .animation-wrapper{
+                position: relative;
+                right: 50px;
+                bottom: 50px;
+                overflow: hidden;
+                width: 850px;
+                height: 850px;
+
+                @include mobile{
+                right: 0;
+
+                    width: 250px;
+                height: 250px;
+
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+.arrowContainer{
+
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+
+
+       @include mobile{
+        position: absolute;
+        bottom: 0px;
+       }
+    
+
+
+    .arrow{
+        color:black;
+        font-size: 8rem;
+        bottom: 5px;
+        animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+        0%{
+            opacity: 100%;
+          }
+
+      50% {
+        opacity: 0%;
+      }
+
+      100%{
+        opacity: 100%;
+      }
+
+      
+    }
+
+    
+}

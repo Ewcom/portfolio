@@ -1,0 +1,21 @@
+$mainColor: #E34234;
+$secondaryColor:#5e14d4;
+$thirdColor:#0D698B;
+$ivory: #F2F1E8;
+
+$width: 768px;
+$widthML: 1300px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+    
+};
+
+@mixin mobileM {
+    @media (max-width: #{widthML}){
+        @content
+    }
+    
+};
