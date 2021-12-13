@@ -1,7 +1,8 @@
-import {useRef, useEffect} from 'react'
+import { useRef, useEffect } from 'react'
 import './contact.scss'
 import animation from '../../anim/contact.json'
 import lottie from 'lottie-web'
+import emailjs from 'emailjs-com'
 
 
 export const Contact = () => {
@@ -26,6 +27,19 @@ export const Contact = () => {
         })
     }, []);
 
+    function handleEmail(e) {
+
+        e.preventDefault();
+        emailjs.sendForm('service_uieomhb', 'template_3kp0rx3', e.target, process.env.REACT_APP_EMAILJS_USER_KEY)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+            e.target.reset()
+    }
+
 
     return (
         <div className="contact" id="contact">
@@ -33,9 +47,9 @@ export const Contact = () => {
 
                 <div className="form">
                     <h1>Contact Me!</h1>
-                    <form action="">
-                        <input type="text" name="" id="" placeholder="Email" />
-                        <textarea placeholder="Message"></textarea>
+                    <form onSubmit={handleEmail}>
+                        <input type="text" name="email" id="" placeholder="Email" />
+                        <textarea name='message' placeholder="Message"></textarea>
                         <input type="submit" value="SEND" />
 
                     </form>
@@ -51,7 +65,7 @@ export const Contact = () => {
 
                     <div className="leftContainer">
 
-                    © 2021 Emiliano Villalpando
+                        © 2021 Emiliano Villalpando
 
 
                     </div>
