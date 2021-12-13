@@ -47,7 +47,7 @@ export const Contact = () => {
 
                 <div className="form">
                     <h1>Contact Me!</h1>
-                    <form onSubmit={handleEmail}>
+                    <form onSubmit={(e)=>{handleEmail(e)}}>
                         <input type="text" name="email" id="" placeholder="Email" />
                         <textarea name='message' placeholder="Message"></textarea>
                         <input type="submit" value="SEND" />
