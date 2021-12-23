@@ -4,7 +4,7 @@
     width: 100vw;
     height: calc(100vh - 70px);
     top: 70px;
-    background-color: $ivory;
+    background-color: #0c0c0c;
 
     @include mobile {
         top: 0px;
@@ -26,7 +26,6 @@
 
             flex: 2;
             display: flex;
-            align-items: center;
             flex-direction: column;
 
             @include mobile {
@@ -37,8 +36,8 @@
             }
 
             h1 {
-              
-                color: rgb(32, 32, 32);
+                text-align: center;
+                color: rgb(238, 238, 238);
                 font-size: 6rem;
                 font-weight: 600;
                 margin: 10%;
@@ -72,6 +71,8 @@
 
                 display: flex;
                 flex-direction: row;
+                align-items: center;
+                justify-content: center;
                 gap: 20px;
 
                 @include mobileM{
@@ -132,7 +133,7 @@
                     }
                     .item-desc {
                         color: rgb(34, 34, 34);
-                        padding-top: 5px;
+                        padding-top: 2px;
                         text-align: center;
                         font-weight: 800;
                         font-size: 1.7rem;

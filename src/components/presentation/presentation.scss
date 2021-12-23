@@ -86,6 +86,7 @@
                     
                 }
 
+
                 a{
                     text-decoration: none;
                     position: relative;
@@ -101,12 +102,27 @@
                     border-radius: 3px;
 
                     &:hover{
-                    box-shadow:  5px 5px 10px rgb(153, 148, 148);
+                    box-shadow:  3px 3px 10px rgb(153, 148, 148);
 
                     }
+
+                    @include mobile{
+                        margin-top: 15px;
+                        padding: 10px;
+                  
+                    
+                            
+                        }
+
+
                     
                 }
 
+                .cv-button{
+                    background-color: black;
+                    margin-left: 10px;
+
+                }
 
 
                 .ityped-cursor {

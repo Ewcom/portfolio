@@ -39,7 +39,7 @@ export const Portfolio = () => {
                     </div>
                 </div>
                 <div className="portfolio-section">
-                    <h1>PORTFOLIO</h1>
+                <h1>PORTFOLIO</h1>
 
                     <div className="portfolio-main">
 

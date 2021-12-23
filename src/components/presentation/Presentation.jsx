@@ -30,7 +30,7 @@ export const Presentation = () => {
             showCursor: true,
             backDelay: 900,
             backSpeed: 60,
-            strings: ["Developer", "Designer", "Problem Solver"],
+            strings: ["Developer", "Designer", "Problem Solver","Critical Thinker","Autodidact"],
         });
     }, []);
 
@@ -49,6 +49,7 @@ export const Presentation = () => {
                         <br />
 
                         <a href="#portfolio">PORTFOLIO</a>
+                        <a className='cv-button' href="https://drive.google.com/file/d/14HZrmIujDEp5cHJxJEZC6ZT5sArMEyni/view?usp=sharing">CURRICULUM</a>
                         <br />
                         <br />
                     </div>
